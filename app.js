@@ -15,14 +15,17 @@ const loadData = () => {
             //     list.appendChild(listItem);
             // })
 
-            launches.forEach(spacex => {
+            // launches.forEach(spacex => {
+            //     const listItem = document.createElement("li");
+            //     listItem.innerText = spacex.links.patch.large;
+            //     list.appendChild(listItem);
+
+            // })
+            launches.forEach(spacesx =>{
                 const listItem = document.createElement("li");
-                listItem.innerText = spacex.links.patch.large;
+                listItem.innerText = spacesx.date_local;
                 list.appendChild(listItem);
-
             })
-            
-
         })
         .catch(error => console.error("something broke"))
 }

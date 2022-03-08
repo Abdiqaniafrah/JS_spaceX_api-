@@ -9,12 +9,19 @@ const loadData = () => {
 
             const list = document.querySelector("#spaceX-list");
 
+            // launches.forEach(spacex => {
+            //     const listItem = document.createElement("li");
+            //     listItem.innerText = spacex.links.article;
+            //     list.appendChild(listItem);
+            // })
 
             launches.forEach(spacex => {
                 const listItem = document.createElement("li");
-                listItem.innerText = spacex.links.article;
+                listItem.innerText = spacex.links.patch.large;
                 list.appendChild(listItem);
+
             })
+            
 
         })
         .catch(error => console.error("something broke"))
